@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "..\\Sublime Text 3\\New buit stuffs"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "My Portfolio"
+	}
+}
