@@ -1,0 +1,553 @@
+*{
+	box-sizing: border-box; 
+	background: #000;
+}
+
+body{
+    font-family: 'Cabin',sans-serif;
+    line-height: 1.5;
+    font-size: 1.3rem; 
+	margin: 0;
+}
+
+img{
+	max-width: 100%;
+ }
+ 
+ .container{
+	width: 90%;
+	max-width: 1200px; 
+	margin: 0 auto;
+    
+ }
+ .roll{
+	 display: flex;
+	 justify-content: space-between;
+ }
+
+ h1{
+    font-weight: 500;
+    font-family: 'Ubuntu';
+}
+h2{
+    font-size: 1.8rem;
+    font-weight: 500;
+    font-family: 'Ubuntu';
+    --text-opacity: 1;
+    color: #fff;
+    color: rgba(255,255,255,var(--text-opacity));
+}
+
+h3{
+    font-weight: 500;
+    font-family: 'Ubuntu';
+    --text-opacity: 1;
+    color: #fff;
+    color: rgba(255,255,255,var(--text-opacity));
+}
+
+h4{
+    font-weight: 500;
+    font-family: 'Ubuntu';
+    --text-opacity: 1;
+    color: #fff;
+    color: rgba(255,255,255,var(--text-opacity)); 
+}
+p{
+    font-size: 1rem;
+    display: block;
+    --text-opacity: 1;
+    color: #e2e8f0;
+    color: rgba(226,232,240,var(--text-opacity));
+}
+
+@font-face { font-family: 'Ubuntu'; src: url('Ubuntu/Ubuntu-Bold.ttf'); } 
+@font-face { font-family: 'Ubuntu'; src: url('Ubuntu/Ubuntu-Light.ttf'); }
+@font-face { font-family: 'Ubuntu'; src: url('Ubuntu/Ubuntu-Medium.ttf'); }
+@font-face { font-family: 'Ubuntu'; src: url('Ubuntu/Ubuntu-Regular.ttf');}
+
+
+header {
+    /* background: #136c72 ;  */
+	padding-top: .8em;
+}
+
+.nav{
+    /* width: 100%; */
+}
+
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+	
+}
+
+.nav__list{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+
+.nav__list--primary{
+    align-items: center;
+}
+.nav__list--primary a{
+    font-size: .7em;
+    font-weight: bold;
+}
+
+.nav__list--secondary{
+    align-items: center;
+}
+
+.nav__list--secondary a{
+    font-size: .7em;
+    font-weight: bold;
+}
+
+.nav__list .active{
+    --text-opacity: 1;
+    color: rgba(72,187,120,var(--text-opacity));
+}
+
+.nav__item + .nav__item{
+    margin-left: 2em;
+}
+
+
+.nav__link{
+    color:#fff;
+    text-decoration: none;
+    font-size: .78em;
+    font-family: 'Ubuntu';
+    
+}
+
+.nav__link:hover,
+.nav__link:focus{
+    opacity: .65;
+    --text-opacity: 1;
+    color: rgba(72,187,120,var(--text-opacity));
+}
+
+.img-div img{
+    width: 55px;
+	height: 60px;
+	border-radius: 50%;
+    padding-left: 5px;
+    margin-right: 1em;
+}
+
+
+section {
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+	/* padding: 90px 0; */
+	z-index: 10;
+}
+
+
+
+
+
+
+
+
+.contact-sec{
+    width: 60%;
+    /* border: 2px brown solid; */
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1em;
+    /* border: 2px solid red; */
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], textarea {
+    width: 100%; /* Full width */
+    padding: 10px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    /* box-sizing: border-box; Make sure that padding and width stays in place */
+     /* Add a top margin */
+    margin-bottom: 1px; /* Bottom margin */
+    resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+    color: white;
+    
+}
+
+input.valid{
+    border-color: #36cc36;
+}
+input.invalid{
+    border-color: orange;
+}
+input + p{
+    opacity: 0;
+    height: 0;
+    margin: 0 5px;
+}
+
+input.invalid + p{
+    font-size: 0.6em;
+    opacity: 1;
+    height: auto;
+    margin: 0 10px;
+    color: orangered;
+}
+
+/* input[type=text]:focus {
+    --text-opacity: 1;
+    border-color: rgba(72,187,120,var(--text-opacity));;
+    
+} */
+  /* #fname, #lname, #email{
+    width: 70%;
+    padding: 12px;
+    border: 2px solid red;
+  } */
+  /* Style the submit button with a specific background color etc */
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  /* Add a background color and some padding around the form */
+  .wrapper {
+    border-radius: 5px;
+    /* background-color: #f2f2f2; */
+    padding: 10px;
+
+  }
+  
+
+
+
+/* <--Footer--> */
+
+.Quick--links{
+    margin-top: 5em;
+}
+
+.footer-body{
+    margin-bottom: .6em;
+}
+
+.footer img{
+    margin-top: 1em; 
+    width: 55px;
+	height: 60px;
+	border-radius: 50%;
+    padding-right: 5px;
+    
+}
+
+.personal{
+	width: 90%;
+}
+
+.personal h3{
+    font-size: 1.5em;
+    font-weight: 500;
+    --text-opacity: 1;
+    color: #fff;
+    color: rgba(255,255,255,var(--text-opacity));
+}
+
+.personal p{
+	font-size: .7em;
+}
+
+.personal p:first-of-type{
+	color: palevioletred;
+}
+
+.quick-links,
+.featured-articles{
+	margin-top: 1em;
+}
+
+.quick-link-list{
+    flex-direction: column;
+    
+}
+
+.quick-link-list a{
+    text-decoration: none;
+    /* color: #000; */
+    margin-bottom: .7em;
+    font-size: .8em;
+    --text-opacity: 1;
+    color: #e2e8f0;
+    color: rgba(226,232,240,var(--text-opacity));
+}
+
+.quick-links a:hover,
+.quick-links a:active{
+	color: mediumseagreen;
+	text-decoration: none;
+	background: transparent;
+}
+
+.featured-articles-list{
+    flex-direction: column;
+}
+
+.featured-articles-list a{
+    text-decoration: none;
+    /* color: #000; */
+    margin-bottom: .7em;
+    font-size: .8em;
+    --text-opacity: 1;
+    color: #e2e8f0;
+    color: rgba(226,232,240,var(--text-opacity));
+}
+
+.featured-articles a:hover,
+.featured-articles a:focus{
+	color: mediumseagreen;
+	text-decoration: none;
+	background: transparent;
+	border: none;
+	outline: none;
+}
+
+.social-icon-2{
+    margin-bottom: 2em;
+    display: flex;
+    padding: 0;
+    
+}
+.social-icon-2 li .fa:hover,
+.social-icon-2 li .fa:active{
+	color: mediumseagreen;
+	background: transparent;
+}
+.social-icon-2 .list{
+  
+}
+
+.font-awesome-2{
+    list-style: none;
+    font-size: 1.2rem;
+}
+
+.font-awesome-2 .fa{
+    --text-opacity: 1;
+    color: #fff;
+    color: rgba(255,255,255,var(--text-opacity));
+	background: #000;
+	font-size: 1.2em;
+}
+
+.font-awesome-2 + .font-awesome-2{
+    margin-left: .86em;
+}
+
+ .copyright{
+    /* display: flex;
+    align-items: flex-end; */
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.copyright p{
+    margin-bottom: 0;
+    font-size: .8em;
+    --text-opacity: 1;
+    color: rgba(160,174,192,var(--text-opacity))
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:500px){
+	
+	
+	.nav ul.nav__list li{
+        display: none;
+    }
+
+	.nav .nav__list--primary li a{
+        /* font-size: .7em;
+        font-weight: bold; */
+        display: none;
+    }
+
+	.nav ul.nav__list li:first-child{
+        display: block;
+		font-size: 1em;
+    }
+
+	.nav ul.nav__list li .nav__link{
+        --text-opacity: 1;
+        color: rgba(72,187,120,var(--text-opacity));
+        align-self: center;
+        margin-right: .9em;
+    }
+
+    .contact-sec{
+        width: 100%;
+        /* border: 2px brown solid; */
+    }
+
+    input[type=submit] {
+        font-size: .8em;
+    }
+
+    .footer-body{
+		flex-direction: column;
+	}
+
+    .quick-link-list a, .featured-articles-list a{
+        font-size: .9rem;
+    }
+
+    .copyright p{
+        font-size: .6em;
+    }
+}
+
+@media (max-width:700px){
+    
+    .nav ul.nav__list li{
+        display: none;
+    }
+
+    .nav .nav__list--primary li a{
+        /* font-size: .7em;
+        font-weight: bold; */
+        display: none;
+    }
+
+    .nav ul.nav__list li:first-child{
+        display: block;
+    }
+
+    .nav ul.nav__list li .nav__link{
+        --text-opacity: 1;
+        color: rgba(72,187,120,var(--text-opacity));
+        align-self: center;
+        margin-right: .9em;
+    }
+
+
+
+    .footer-body{
+        flex-direction: column;
+    }
+
+    .footer-body h3{
+        font-size: 1.5em;
+        font-weight: 500;
+        margin-bottom: .9em;
+    }
+
+    .personal{
+        width: 100%;
+    }
+    .personal p{
+        --text-opacity: 1;
+        color: #e2e8f0;
+        color: rgba(226,232,240,var(--text-opacity));
+        
+    }
+
+    .personal p:first-of-type{
+        margin-bottom: .8em;
+        
+    }
+
+    .personal .social-icon-2 .fa{
+        font-size: .96em;
+    }
+
+    .quick-link-list a{
+        font-size: .9rem;
+
+    }
+
+    .featured-articles-list a{
+        font-size: .9rem;
+    }
+
+    .copyright .fa{
+        margin-right: .3em;
+        font-size: .9em;
+    }
+    .copyright p{
+        font-size: .7em;
+    }
+}
+    
+@media (min-width:700px){
+	.footer-body{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 3em;
+    }
+
+	.flex-link{
+		display: grid;
+		grid-template-columns: repeat(2,1fr);
+	}
+
+    .quick-link-list a{
+        font-size: .9rem;
+
+    }
+
+    .featured-articles-list a{
+        font-size: .9rem;
+    }
+
+	.featured-articles a:hover,
+	.featured-articles a:focus{
+		color: mediumseagreen;
+		text-decoration: none;
+		background: transparent;
+		border: none;
+		outline: none;
+	}
+
+
+    .copyright .fa{
+        margin-right: .3em;
+        font-size: .9em;
+    }
+    .copyright p{
+        font-size: .6em;
+    }
+}
